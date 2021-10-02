@@ -16,6 +16,7 @@
   * [Installation](#installation)
 * [Contributing](#contributing)
 *[Working](#Working)
+*[Join Us](#Join-us)
 
 
 
@@ -65,6 +66,8 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request.
 
+In case of any doubts feel free to hop onto our [Discord Server](https://discord.semikolan.co) for help.
+
 <!--Working-->
 ## Working 
 
@@ -90,3 +93,8 @@ Example:
 <p align="center">
   <img src="assets/img/Final.png" width="400">
 </p>
+
+## Join Us
+
+Be a part of the amazing community by joining our [Discord Server](https://discord.semikolan.co). You can discuss about the project or ask any other queries and there will be a lot of folks to help.
+[Click here](https://discord.semikolan.co) and Let the discussions begin.
