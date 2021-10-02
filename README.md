@@ -1,4 +1,4 @@
-<h1 align="center">Youtube Thumbnail Downloader</h1>
+<h1 align="center"><a href="https://semikolan-co.github.io/YouTube-Thumbnail-Downloader">Youtube Thumbnail Downloader</a></h1>
 
   <p align="center">
     Youtube Thumbnail Downloader is a Simple Web page Tool, which is used to download the thumbnail of any youtube video.   
@@ -53,7 +53,7 @@ git clone https://github.com/<your_username_>/YouTube-Thumbnail-Downloader.git
 ```sh
    cd YouTube-Thumbnail-Downloader
 ```
-4.Run the index.html
+4. Run the index.html
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -68,18 +68,16 @@ Contributions are what make the open source community such an amazing place to b
 <!--Working-->
 ## Working 
 
-1. Click on Url
-```bash
-      https://semikolan-co.github.io/YouTube-Thumbnail-Downloader/
-```
-This is how it look like after moving on the page.
+1. [Click here]( https://semikolan-co.github.io/YouTube-Thumbnail-Downloader/)
+
+    This is how it look like after moving on the page.
 <p align="center">
   <img src="assets/img/Webpage1.png" width="400" title="WEB Page">
 </p>
 
-2.  Paste any youtube link of which thumbnails you want.
+2. Paste any youtube link of which thumbnails you want.
 
-3. Click on seacrh button.
+3. Click on search button.
 
 4. After that download option came like this:
 <p align="center">
