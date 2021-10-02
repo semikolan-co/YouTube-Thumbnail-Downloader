@@ -15,8 +15,8 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Contributing](#contributing)
-*[Working](#Working)
-*[Join Us](#Join-us)
+*[Working](#working)
+*[Join Us](#join-us)
 
 
 
