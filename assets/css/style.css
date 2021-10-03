@@ -94,7 +94,7 @@ input[name="url"] {
 }
 
 .button:active {
-  background-color: #3e8e41;
+  background-color: #ffffff7a;
   box-shadow: 0 5px #666;
   transform: translateY(10px);
 }
