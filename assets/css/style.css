@@ -92,7 +92,7 @@ body {
     margin-top: 20px;
     position: relative;
     padding:10px 30px;
-    background: linear-gradient(270deg,var(--Navy) 0%, var(--LightestNavy) 100%);
+    background: linear-gradient(to left, #780206, #061161);
     border: 1px solid #ccc;
     border-radius: 20px;
     color: #fffa;
