@@ -20,7 +20,7 @@
     box-sizing: border-box;
 }
 body {
-    background: linear-gradient(90deg,var(--Navy) 0%, var(--LightestNavy) 100%);
+    background: linear-gradient(to right, #780206, #061161);
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -78,7 +78,7 @@ body {
     font-size: 1.2em;
     font-weight: 900;
     color: #fff;  
-    background: linear-gradient(270deg,var(--Navy) 0%, var(--LightestNavy) 100%);
+    background: linear-gradient(to left, #780206, #061161);
     border: 1px solid #ccc;
     /* background: #fff2; */
     outline: none;
