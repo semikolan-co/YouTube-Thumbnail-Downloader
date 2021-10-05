@@ -1,96 +1,212 @@
-/* You can write Styling for Your WebPage here */
+@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Hind&display=swap");
+* {
+  -webkit-font-smoothing: antialiased;
+  color: #acbdce;
+}
 
-    
 :root {
-    --Navy: #0a192f;
-    --LightNavy: #112240;
-    --LightestNavy: #233554;
-    --Slate: #8892b0;
-    --LightSlate: #a8b2d1;
-    --LightestSlate: #ccd6f6;
-    --White: #e6f1ff;
-    --Green: #64ffda;
-    --consolas: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --border-radius: 10px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    transition: 1s ease;
+body,
+html {
+  background: #e2e9f4;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-body {
-    background: linear-gradient(90deg,var(--Navy) 0%, var(--LightestNavy) 100%);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    color: #fff;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  --white: #FFFFFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+.contain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top:50px ;
+ 
+}
 
-    }
+.Card {
+  padding-top: 5px;
+  border-radius: var(--border-radius);
+  background: linear-gradient(-67deg, rgba(200, 216, 231, 0.7), rgba(255, 255, 255, 0.8));
+  overflow: hidden;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6), 2px 2px 12px #c8d8e7;
+  width: 100%;
+  transform: translateY(50px);
+}
+
+.CardInner {
+  padding: 16px 16px;
+  background-color: #e2e9f4;
+  border-radius: var(--border-radius);
+}
+
+.container {
+  display: flex;
+}
+
+.Icon {
+  min-width: 46px;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  margin-right: 12px;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6), 2px 2px 12px #c8d8e7;
+}
+.Icon svg {
+  transform: translate(-1px, -1px);
+}
+
+label {
+  font-family: "Hind", sans-serif;
+  display: block;
+  color: #3c4b66;
+  margin-bottom: 12px;
+  background: linear-gradient(45deg, #6b7b8f, #3c4b66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.InputContainer {
+  width: 100%;
+}
+
+input {
+  background-color: #e3edf7;
+  padding: 16px 32px;
+  border: none;
+  display: block;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  color: #a9b8c9;
+  -webkit-appearance: none;
+  transition: all 240ms ease-out;
+  width: 100%;
+}
+input::placeholder {
+  color: #6d7f8f;
+}
+input:focus {
+  outline: none;
+  color: #6d7f8f;
+  background-color: #eff5fa;
+}
+
+.InputContainer {
+  --top-shadow: inset 1px 1px 3px #c5d4e3, inset 2px 2px 6px #c5d4e3;
+  --bottom-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.7);
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.InputContainer:before, .InputContainer:after {
+  left: 0;
+  top: 0;
+  display: block;
+  content: "";
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.InputContainer:before {
+  box-shadow: var(--bottom-shadow);
+}
+.InputContainer:after {
+  box-shadow: var(--top-shadow);
+}
+
+/*  ICONS  */
+
+.icon__account, .icon__home, .icon__settings {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 30px;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+
+  color: var(--greyDark);
+  transition: all 0.5s ease;
+}
+.icon__account:active, .icon__home:active, .icon__settings:active {
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+  color: var(--primary);
+}
+.icon__account:hover, .icon__home:hover, .icon__settings:hover {
+  color: var(--primary);
+}
+.yt{
+  font-size: 4em;
+  color: red;
+}
+.down{
+  padding: 50px;
+}
+.down label{
+  font-size: 30px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+/*  BUTTONS  */
+.btn {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10px;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+  justify-self: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  transform: translateX(200px);
+}
 
 
-    .toolcontainer{
-      max-width: 700px;
-      text-align: center;
-    }
+.btn__secondary {
+  color: var(--greyDark);
+  padding-top: 20px;
+}
+.btn__secondary:hover {
+  color: var(--primary);
+}
+.btn__secondary:active {
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+}
+.btn a {
+  font-size: 1rem;
+  padding-left:30px;
+    font-family: "Orbitron", sans-serif;
+  text-decoration: none;
+}
+.thumbnailimg {
+    width: 60%;
+    padding-top: 50px;
+    padding-bottom: 30px;
 
-/* For Moving Letter Animation */
-.ml6 {
-    position: relative;
-    font-weight: 900;
-    font-size: 3.3em;
+    padding-left: 25%;
+align-self: center;
   }
+
+@media (max-width: 770px){
+  .btn {
   
-  .ml6 .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: 0.2em;
-    padding-right: 0.05em;
-    padding-bottom: 0.1em;
-    overflow: hidden;
-  }
-  
-  .ml6 .letter {
-    display: inline-block;
-    line-height: 1em;
-  }
-
-
-  input[name="url"] {
-    width: 100%;  
-    height:50px;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 900;
-    color: #fff;  
-    background: linear-gradient(270deg,var(--Navy) 0%, var(--LightestNavy) 100%);
-    border: 1px solid #ccc;
-    /* background: #fff2; */
-    outline: none;
-  }
-
-  .thumbnailimg {
-    width: 100%;
-    margin:20px 0;
-  }
-  .button{
-    margin-top: 20px;
-    position: relative;
-    padding:10px 30px;
-    background: linear-gradient(270deg,var(--Navy) 0%, var(--LightestNavy) 100%);
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    color: #fffa;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .downloadbutton{
-    display:none;
-    margin: 0;
-  }
+  transform: translateX(0px);
+}
+}
