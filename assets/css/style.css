@@ -1,16 +1,18 @@
 /* You can write Styling for Your WebPage here */
+
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
     
 :root {
-    --Navy: #0a192f;
-    --LightNavy: #112240;
-    --LightestNavy: #233554;
-    --Slate: #8892b0;
-    --LightSlate: #a8b2d1;
-    --LightestSlate: #ccd6f6;
-    --White: #e6f1ff;
-    --Green: #64ffda;
-    --consolas: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --Navy: #0a192f;
+  --LightNavy: #112240;
+  --LightestNavy: #233554;
+  --Slate: #8892b0;
+  --LightSlate: #a8b2d1;
+  --LightestSlate: #ccd6f6;
+  --White: #e6f1ff;
+  --Green: #64ffda;
+  --consolas: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
 }
 
 *{
@@ -68,7 +70,83 @@ body {
     display: inline-block;
     line-height: 1em;
   }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  transition: 1s ease;
+}
+body {
+  background: linear-gradient(90deg, var(--Navy) 0%, var(--LightestNavy) 100%);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.toolcontainer {
+  max-width: 700px;
+  text-align: center;
+}
+
+/* For Moving Letter Animation */
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+input[name="url"] {
+  width: 100%;
+  height: 50px;
+  border-radius: 17px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #fff;
+  background: linear-gradient(270deg, var(--Navy) 0%, var(--LightestNavy) 100%);
+  border: 2px solid rgba(204, 204, 204, 0.856);
+  /* background: #fff2; */
+  outline: none;
+}
+
+.thumbnailimg {
+  width: 100%;
+  margin: 20px 0;
+}
+.button {
+  margin-top: 20px;
+  position: relative;
+  padding: 10px 30px;
+  background: linear-gradient(270deg, var(--Navy) 0%, var(--LightestNavy) 100%);
+  border: 2px solid rgba(204, 204, 204, 0.856);
+  border-radius: 17px;
+  color: #fffa;
+  text-decoration: none;
+  font-weight: 600;
+}
+.button:hover {
+  background: #ffffff7a;
+  color: rgba(255, 255, 255, 0.884);
 
   input[name="url"] {
     width: 100%;  
@@ -120,3 +198,15 @@ body {
     text-decoration: underline;
  
   }
+
+}
+
+.button:active {
+  background-color: #ffffff7a;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+}
+.downloadbutton {
+  display: none;
+  margin: 0;
+}
