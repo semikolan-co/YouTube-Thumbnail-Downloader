@@ -128,6 +128,10 @@ input[name="url"] {
   /* background: #fff2; */
   outline: none;
 }
+#place:hover{
+  background: #ffffff7a;
+
+}
 
 .thumbnailimg {
   width: 100%;
