@@ -54,7 +54,8 @@ body {
 .letters{
   font-family:  'Secular One';
   font-size: 4rem;
-  color: rgb(255, 239, 239);
+  color: grey;
+  
 }
   
   .ml6 .text-wrapper {
@@ -146,7 +147,7 @@ input[name="url"] {
 }
 .button:hover {
   background: #ffffff7a;
-  color: rgba(255, 255, 255, 0.884);
+  color: rgba(255, 255, 255, 0.527);
 
   input[name="url"] {
     width: 100%;  
@@ -200,6 +201,7 @@ input[name="url"] {
   }
 
 }
+
 
 .button:active {
   background-color: #ffffff7a;
