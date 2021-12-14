@@ -41,6 +41,7 @@ $(".search").on("click", function () {
       .attr("href", getImgFromId(id))
       .css("display", "inline-block");
   } else {
+    // errPara.style.display = "none";
     errPara.textContent = "Please enter a valid URL";
   }
 });
