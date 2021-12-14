@@ -36,6 +36,7 @@ $(".search").on("click", function () {
     errPara.style.display = "none";
     var id = getIdfromurl(url);
     console.log(id);
+    $(".show-arrow").css("display", "none");
     $(".thumbnailimg").attr("src", getImgFromId(id));
     $(".downloadbutton")
       .attr("href", getImgFromId(id))
