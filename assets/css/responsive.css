@@ -12,6 +12,7 @@
   padding: 25px;
   height: 120vh;
 }
+
 .yt-logo {
   width: 200px;
   box-shadow: 1px;
@@ -84,4 +85,23 @@
 }
 .link {
   color: #fff;
+}
+.first-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .toolcontainer {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  .secondcontainer {
+    width: 40%;
+    margin-left: auto;
+  }
+  .footer{
+      align-self: ;
+  }
 }
