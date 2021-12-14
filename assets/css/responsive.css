@@ -41,7 +41,7 @@
   color: #fff;
   margin-top: 5px;
 }
-.button {
+.search-button {
   background: linear-gradient(270deg, var(--Navy) 0%, var(--LightestNavy) 100%);
   border: 2px solid rgba(204, 204, 204, 0.856);
   border-top-right-radius: 5px;
