@@ -14,35 +14,35 @@
 //     delay: (el, i) => 50 * i
 //   })
 
-
-
-
-getIdfromurl = function(url) {
-  if(url.includes("youtube.com")){
-
-    var id = url.split('youtube.com/').pop();
-    id = id.split('?v=')[1];
-  return id;
-  }
-  else{
-    var id = url.split('/').pop();
+getIdfromurl = function (url) {
+  if (url.includes("youtube.com")) {
+    var id = url.split("youtube.com/").pop();
+    id = id.split("?v=")[1];
+    return id;
+  } else {
+    var id = url.split("/").pop();
     return id;
   }
   return url;
-}
+};
 
-getImgFromId = function(id) {
+getImgFromId = function (id) {
   return `https://img.youtube.com/vi/${id}/hq720.jpg`;
-}
-  $('.search').on('click', function() {
-    var url = $('input[name="url"]').val(); 
-    var id = getIdfromurl(url); 
+};
+const errPara = document.getElementById("err-msg");
+$(".search").on("click", function () {
+  var url = $('input[name="url"]').val();
+  if (url !== "") {
+    errPara.style.display = "none";
+    var id = getIdfromurl(url);
     console.log(id);
-    $('.thumbnailimg').attr('src', getImgFromId(id));
-    $('.downloadbutton').attr('href', getImgFromId(id)).css('display', 'inline-block');
-
-
-  })
+    $(".thumbnailimg").attr("src", getImgFromId(id));
+    $(".downloadbutton")
+      .attr("href", getImgFromId(id))
+      .css("display", "inline-block");
+  } else {
+    errPara.textContent = "Please enter a valid URL";
+  }
+});
 
 //https://i.ytimg.com/vi/FSBNe_PR47U/hq720.jpg
- 

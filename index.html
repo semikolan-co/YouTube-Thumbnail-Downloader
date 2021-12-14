@@ -122,19 +122,23 @@
 
   <body>
     <div class="toolcontainer">
-      <img src="./assets/img/yTlogo.png" alt="" />
+      <img src="./assets/img/yTlogo.png" alt="" class="yt-logo" />
 
-      <div class="logo"><img src="assets/img/yt-logo.png" /></div>
-      <span class="text-wrapper">
-        <span class="letters">Youtube Thumbnail Downloader</span>
-      </span>
-      <input
-        type="text"
-        name="url"
-        id=""
-        placeholder="Enter Youtube URL or Video ID"
-      />
-      <button href="" class="search button">Search</button>
+      <!-- <div class="logo"><img src="assets/img/yt-logo.png" /></div> -->
+
+      <h1 class="letters">Youtube Thumbnail Downloader</h1>
+
+      <div class="input-div">
+        <input
+          type="text"
+          name="url"
+          id=""
+          class="input-box"
+          placeholder="Enter Youtube URL or Video ID"
+        />
+        <button href="" class="search button">Search</button>
+      </div>
+      <p id="err-msg"></p>
       <img
         src=""
         class="thumbnailimg animate__animated animate__bounce animate__faster"

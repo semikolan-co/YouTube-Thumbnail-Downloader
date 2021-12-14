@@ -1,1 +1,42 @@
 /* You can write write Responsive CSS for your Code here */
+* {
+  margin: 0;
+}
+.toolcontainer {
+  background: linear-gradient(to right, #780206, #061161);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 25px;
+  height: 100vh;
+}
+.yt-logo {
+  width: 200px;
+  box-shadow: 1px;
+  transition: 0.3s all ease-in-out;
+}
+.yt-logo:hover {
+  transform: scale(1.2);
+}
+.letters {
+  font-family: "Secular One";
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(255, 239, 239);
+}
+.input-div {
+  display: flex;
+}
+.input-box {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 30px;
+  padding: 5px;
+}
+#err-msg {
+  color: #fff;
+  margin-top: 5px;
+}
