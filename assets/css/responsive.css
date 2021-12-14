@@ -35,8 +35,18 @@
   border-bottom-left-radius: 5px;
   height: 30px;
   padding: 5px;
+  border: 2px solid rgba(204, 204, 204, 0.856);
 }
 #err-msg {
   color: #fff;
   margin-top: 5px;
+}
+.button {
+  background: linear-gradient(270deg, var(--Navy) 0%, var(--LightestNavy) 100%);
+  border: 2px solid rgba(204, 204, 204, 0.856);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fffa;
+  text-decoration: none;
+  font-weight: 600;
 }
