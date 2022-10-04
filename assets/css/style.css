@@ -210,3 +210,21 @@ input[name="url"] {
   display: none;
   margin: 0;
 }
+
+/*Only works for Chromium based browsers*/
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background:  #233554;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent,#aae8fd );
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent,#ff7f7f );
+}
