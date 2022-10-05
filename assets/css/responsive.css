@@ -1,1 +1,121 @@
 /* You can write write Responsive CSS for your Code here */
+* {
+  margin: 0;
+}
+.toolcontainer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.main-container {
+  background: linear-gradient(to right, #780206, #061161);
+  background-size: cover;
+  padding: 25px;
+  height: 120vh;
+}
+
+.yt-logo {
+  width: 200px;
+  box-shadow: 1px;
+  transition: 0.3s all ease-in-out;
+}
+.yt-logo:hover {
+  transform: scale(1.2);
+}
+.letters {
+  font-family: "Secular One";
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(255, 239, 239);
+}
+.input-div {
+  display: flex;
+}
+.input-box {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 30px;
+  padding: 5px;
+  border: 2px solid rgba(204, 204, 204, 0.856);
+}
+#err-msg {
+  color: #fff;
+  margin-top: 5px;
+}
+.search-button {
+  background: linear-gradient(270deg, var(--Navy) 0%, var(--LightestNavy) 100%);
+  border: 2px solid rgba(204, 204, 204, 0.856);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fffa;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* .output-container {
+  display: none;
+} */
+.downloadbutton {
+  display: none;
+  margin: 0;
+}
+.thumbnailimg {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.download-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+.downloadbutton {
+  background-color: #243ba37a;
+  padding: 10px;
+  border: 2px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer {
+  text-align: center;
+  font-size: 10px;
+  margin-top: auto;
+  color: #fff;
+}
+.link {
+  color: #fff;
+}
+.show-arrow {
+  display: none;
+}
+.first-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .toolcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .secondcontainer {
+    width: 50%;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .show-arrow {
+    display: inline;
+    position: absolute;
+    right: 90px;
+    width: 600px;
+  }
+}
